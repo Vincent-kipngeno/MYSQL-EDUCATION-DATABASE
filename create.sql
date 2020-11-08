@@ -11,7 +11,7 @@ CREATE TABLE course(
     courseid INT(11) NOT NULL AUTO_INCREMENT,
     name VARCHAR(250) NOT NULL,
     institution INT(11) NOT NULL,
-    PRIMARY KEY ( institutionid ),
+    PRIMARY KEY ( courseid ),
     FOREIGN KEY ( institution ) REFERENCES institution( institutionid )
     );
 
